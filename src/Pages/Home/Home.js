@@ -45,6 +45,10 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </banner-section>
+            <inventories-section>
+                <h2> all inventories are here</h2>
+
+            </inventories-section>
 
         </div>
     );
