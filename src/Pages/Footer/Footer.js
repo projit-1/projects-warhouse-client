@@ -3,7 +3,50 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <h2>this footer page</h2>
+            <footer className="bg-dark text-center text-white">
+                <div className="container p-4">
+                    <section className="">
+                        <form action="">
+                            <div className="row d-flex justify-content-center">
+                                <div className="col-auto">
+                                    <p className="pt-2">
+                                        <strong>Contact Us</strong>
+                                    </p>
+                                </div>
+                                <div className="col-md-5 col-12">
+                                    <div className="form-outline form-white mb-4">
+                                        <input type="email" id="email" className="form-control" />
+                                        <label className="form-label" for="email">Email address</label>
+                                    </div>
+                                </div>
+                                <div className="col-auto">
+                                    <button variant="outline-success" type="submit" className="btn btn-outline-light mb-4" >
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <section className="mb-4">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                            repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                            eum harum corrupti dicta, aliquam sequi voluptate quas.
+                        </p>
+                    </section>
+
+                </div>
+
+
+
+                <div className="text-center p-3background-color: rgba(0, 0, 0, 0.2)">
+                    © 2022 Copyright:
+                    <h6 className='my-3'>NS Electronics, Khulna</h6>
+                </div>
+
+            </footer>
+
+
         </div>
     );
 };
