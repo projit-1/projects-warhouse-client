@@ -26,7 +26,7 @@ const Header = () => {
                         </Form>
                         <Nav className='mx-2'>
                             <Button variant="outline-success" className='bg-dark'>Sign Out</Button>
-                            <Nav.Link variant="outline-warning" to="signin">Sign In</Nav.Link>
+                            <Nav.Link as={Link} to="signin">Sign In</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

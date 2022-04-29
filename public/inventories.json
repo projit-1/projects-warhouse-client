@@ -5,78 +5,106 @@
     "img": "https://i.ibb.co/CJhnFFq/imackpro14.jpg",
     "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
     "price": "500",
-    "supplier": "Apple"
+    "supplier": "Apple",
+    "stock": 5
   },
   {
-    "id": "1",
+    "id": "2",
     "name": "MacBook Pro ",
-    "img": "https://i.ibb.co/CJhnFFq/imackpro14.jpg",
+    "img": "https://i.ibb.co/qJ9QXT8/hplaptop03.jpg",
     "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
     "price": "500",
-    "supplier": "Apple"
+    "supplier": "Apple",
+    "stock": 5
   },
   {
-    "id": "1",
+    "id": "3",
     "name": "MacBook Pro ",
-    "img": "https://i.ibb.co/CJhnFFq/imackpro14.jpg",
+    "img": "https://i.ibb.co/8gPPTD7/hplaptop05.jpg",
     "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
     "price": "500",
-    "supplier": "Apple"
+    "supplier": "Apple",
+    "stock": 5
   },
   {
-    "id": "1",
+    "id": "4",
     "name": "MacBook Pro ",
-    "img": "https://i.ibb.co/CJhnFFq/imackpro14.jpg",
+    "img": "https://i.ibb.co/ZVxCYWr/hplaptop12.png",
     "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
     "price": "500",
-    "supplier": "Apple"
+    "supplier": "Apple",
+    "stock": 5
   },
   {
-    "id": "1",
+    "id": "5",
     "name": "MacBook Pro ",
-    "img": "https://i.ibb.co/CJhnFFq/imackpro14.jpg",
+    "img": "https://i.ibb.co/hVBjWss/imac01.jpg",
     "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
     "price": "500",
-    "supplier": "Apple"
+    "supplier": "Apple",
+    "stock": 5
   },
   {
-    "id": "1",
+    "id": "6",
     "name": "MacBook Pro ",
-    "img": "https://i.ibb.co/CJhnFFq/imackpro14.jpg",
+    "img": "https://i.ibb.co/KW768yk/imackair13.jpg",
     "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
     "price": "500",
-    "supplier": "Apple"
+    "supplier": "Apple",
+    "stock": 5
   },
   {
-    "id": "1",
+    "id": "7",
     "name": "MacBook Pro ",
-    "img": "https://i.ibb.co/CJhnFFq/imackpro14.jpg",
+    "img": "https://i.ibb.co/qJ9QXT8/hplaptop03.jpg",
     "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
     "price": "500",
-    "supplier": "Apple"
+    "supplier": "Apple",
+    "stock": 5
   },
   {
-    "id": "1",
+    "id": "8",
     "name": "MacBook Pro ",
-    "img": "https://i.ibb.co/CJhnFFq/imackpro14.jpg",
+    "img": "https://i.ibb.co/yfqn4c6/iphone02.jpg",
     "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
     "price": "500",
-    "supplier": "Apple"
+    "supplier": "Apple",
+    "stock": 5
   },
   {
-    "id": "1",
+    "id": "9",
     "name": "MacBook Pro ",
-    "img": "https://i.ibb.co/CJhnFFq/imackpro14.jpg",
+    "img": "https://i.ibb.co/F7wZP47/iphone13pro11.jpg",
     "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
     "price": "500",
-    "supplier": "Apple"
+    "supplier": "Apple",
+    "stock": 5
   },
   {
-    "id": "1",
+    "id": "10",
     "name": "MacBook Pro ",
-    "img": "https://i.ibb.co/CJhnFFq/imackpro14.jpg",
+    "img": "https://i.ibb.co/zr5XzqZ/samsunglaptop04.jpg",
     "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
     "price": "500",
-    "supplier": "Apple"
+    "supplier": "Apple",
+    "stock": 5
+  },
+  {
+    "id": "11",
+    "name": "MacBook Pro ",
+    "img": "https://i.ibb.co/crqtBKg/Samsung-Laptop08.jpg",
+    "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
+    "price": "500",
+    "supplier": "Apple",
+    "stock": 5
+  },
+  {
+    "id": "12",
+    "name": "MacBook Pro ",
+    "img": "https://i.ibb.co/hW2ZtPf/serfacebook10.jpg",
+    "comment": "With the number of different systems and the number of users, PCs have better backwards compatibility, that is, you can run older versions of software or operating systems on new hardware. ",
+    "price": "500",
+    "supplier": "Apple",
+    "stock": 5
   }
 ]

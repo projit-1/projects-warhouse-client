@@ -5,9 +5,10 @@ import slide01 from "../../images/slide-image01.jpg"
 import slide02 from "../../images/slide-image02.jpg"
 import slide03 from "../../images/slide-image03.jpg"
 import Inventory from '../Inventory/Inventory';
+import './Home.css'
 
 const Home = () => {
-    const [inventories, setInventories] = useInventories()
+    const [inventories, setInventories] = useInventories();
     return (
         <div>
             <banner-section>
@@ -49,13 +50,15 @@ const Home = () => {
                 </Carousel>
             </banner-section>
             <inventories-section>
-                <h2> all inventories are here</h2>
-                {
-                    inventories.slice(0, 6).map(inventory => <Inventory
-                        key={inventory.id}
-                        inventory={inventory}
-                    ></Inventory>)
-                }
+                <h2> Our Items</h2>
+                <div className='inventory'>
+                    {
+                        inventories.slice(0, 6).map(inventory => <Inventory
+                            key={inventory.id}
+                            inventory={inventory}
+                        ></Inventory>)
+                    }
+                </div>
 
             </inventories-section>
 
