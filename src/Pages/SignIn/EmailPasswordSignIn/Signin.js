@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import SocialSignIn from '../SocialSignIn/SocialSignIn';
 
 const EmailPasswordSignIn = () => {
@@ -20,7 +21,9 @@ const EmailPasswordSignIn = () => {
                 </Form.Group>
                 <Button variant="primary" type="submit"> Submit </Button>
             </Form>
-
+            <p>
+                New to NS Electronics? <Link to='/SignUp'>Create an account</Link>
+            </p>
             <div>
                 <SocialSignIn></SocialSignIn>
             </div>

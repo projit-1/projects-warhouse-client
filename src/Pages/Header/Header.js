@@ -15,7 +15,7 @@ const Header = () => {
                             <Nav.Link as={Link} to="home">Home</Nav.Link>
                             <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
                         </Nav>
-                        <Form className="d-flex">
+                        {/* <Form className="d-flex">
                             <FormControl
                                 type="search"
                                 placeholder="Search"
@@ -23,7 +23,7 @@ const Header = () => {
                                 aria-label="Search"
                             />
                             <Button variant="outline-success">Search</Button>
-                        </Form>
+                        </Form> */}
                         <Nav className='mx-2'>
                             <Button variant="outline-success" className='bg-dark'>Sign Out</Button>
                             <Nav.Link as={Link} to="signin">Sign In</Nav.Link>
