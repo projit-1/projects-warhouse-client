@@ -5,12 +5,14 @@ import slide01 from "../../images/slide-image01.jpg"
 import slide02 from "../../images/slide-image02.jpg"
 import slide03 from "../../images/slide-image03.jpg"
 import Inventory from '../Inventory/Inventory';
+import SubBanner from '../SubBanner/SubBanner';
 import './Home.css'
 
 const Home = () => {
     const [inventories, setInventories] = useInventories();
     return (
         <div>
+            <SubBanner></SubBanner>
             <banner-section>
                 <Carousel fade>
                     <Carousel.Item>

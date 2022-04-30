@@ -1,45 +1,24 @@
 import React from 'react';
+import { Button, Form, FormControl } from 'react-bootstrap';
 
 const Footer = () => {
     return (
         <div>
             <footer className="bg-dark text-center text-white">
-                <div className="container p-4">
-                    <section className="">
-                        <form action="">
-                            <div className="row d-flex justify-content-center">
-                                <div className="col-auto">
-                                    <p className="pt-2">
-                                        <strong>Contact Us</strong>
-                                    </p>
-                                </div>
-                                <div className="col-md-5 col-12">
-                                    <div className="form-outline form-white mb-4">
-                                        <input type="email" id="email" className="form-control" />
-                                        <label className="form-label" for="email">Email address</label>
-                                    </div>
-                                </div>
-                                <div className="col-auto">
-                                    <button variant="outline-success" type="submit" className="btn btn-outline-light mb-4" >
-                                        Subscribe
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </section>
-                    <section className="mb-4">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-                            repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-                            eum harum corrupti dicta, aliquam sequi voluptate quas.
-                        </p>
-                    </section>
-
-                </div>
+                <Form className=" w-50 d-flex">
+                    <FormControl
+                        type="search"
+                        placeholder="Search"
+                        className="me-2"
+                        aria-label="Search"
+                    />
+                    <Button variant="outline-success">Search</Button>
+                </Form>
 
 
 
-                <div className="text-center p-3background-color: rgba(0, 0, 0, 0.2)">
+
+                <div className="text-center p-3">
                     © 2022 Copyright:
                     <h6 className='my-3'>NS Electronics, Khulna</h6>
                 </div>

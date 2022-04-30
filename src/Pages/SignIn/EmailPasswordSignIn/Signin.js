@@ -6,7 +6,7 @@ import SocialSignIn from '../SocialSignIn/SocialSignIn';
 const EmailPasswordSignIn = () => {
     return (
         <div>
-            <h2>email pass word login</h2>
+            <h3 className='w-50 mx-auto bg-dark mt-2 text-light py-2 px-5 text-center'>Log In</h3>
             <Form className='w-50 mx-auto'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="email" placeholder="Enter email" />
