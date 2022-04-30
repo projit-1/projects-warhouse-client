@@ -17,8 +17,8 @@ const Footer = () => {
                     <div className="footer-menu mx-auto justify-content-center align-items-center">
                         <div>
                             <Nav.Link as={Link} to="aboutus">About Us</Nav.Link>
-                            <Nav.Link as={Link} to="contact">Contact Us</Nav.Link>
                             <Nav.Link as={Link} to="privacy">Privacy</Nav.Link>
+                            <Nav.Link as={Link} to="contact">Contact Us</Nav.Link>
                             <SocialContact></SocialContact>
                         </div>
                         <div className="text-center  d-flex  justify-content-between align-items-center mx-3 py-3">
