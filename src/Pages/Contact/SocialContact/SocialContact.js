@@ -6,16 +6,16 @@ const SocialContact = () => {
     return (
         <div className='w-100 mx-auto mx-5'>
             <div>
-                <h4 className='text-warning'> Flow Us</h4>
+                <h4 className='text-warning fs-3 text-start px-3 '> Flow Us</h4>
             </div>
-            <div className='d-flex '>
-                <a className='mx-3 bg-light px-2 py-1 "' href="https://">
+            <div className=' socialcontact d-flex'>
+                <a className='  bg-secondary bg-gradient mx-3  px-3 py-2 rounded-3 text-light ' href="https://">
                     <FaFacebookSquare />
                 </a>
-                <a className='bg-light px-2 py-1' href="http://">
+                <a className=' bg-secondary bg-gradient  px-3 py-2 rounded-3 text-light' href="http://">
                     <FaTwitter />
                 </a>
-                <a className='mx-3 bg-light px-2 py-1' href="http://">
+                <a className=' bg-secondary bg-gradient mx-3 px-3 py-2 rounded-3 text-light' href="http://">
                     < FaInstagram />
                 </a>
             </div>

@@ -12,7 +12,7 @@ const Home = () => {
     const [inventories, setInventories] = useInventories();
     return (
         <div>
-            <SubBanner></SubBanner>
+            {/* <SubBanner></SubBanner> */}
             <banner-section>
                 <Carousel fade>
                     <Carousel.Item>
