@@ -7,9 +7,9 @@ const Question = (props) => {
         <div className='container my-3'>
             <h6>{title}</h6>
             <img className='w-50' src={img} alt="" />
-            <p> {answer.slice()}
+            <p> {answer.slice()} <Button>Read More...</Button>
             </p>
-            <Button variant="primary">Read More...</Button>
+
         </div>
     );
 };

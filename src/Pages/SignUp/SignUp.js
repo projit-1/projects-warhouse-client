@@ -47,8 +47,6 @@ const SignUp = () => {
                 <div> <h5>or</h5></div>
                 <div className=' sign w-100'></div>
             </div>
-
-
             <div>
                 <SocialSignIn></SocialSignIn>
             </div>

@@ -40,7 +40,7 @@ const AboutUs = () => {
                         </Form.Label>
                         <Form.Control placeholder="Write your comment here ..." as="textarea" rows={3} />
                     </Form.Group>
-                    <Button variant="success">Primary</Button>{' '}
+                    <Button variant="light">Submit</Button>{' '}
                 </Form>
             </div>
         </div>
