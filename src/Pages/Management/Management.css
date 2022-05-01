@@ -2,3 +2,20 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
+
+.management-text img {
+    width: 50%;
+}
+
+.management-text p {
+    text-align: justify;
+    padding-left: 25px;
+}
+
+.faqs-p {
+    text-align: justify;
+}
+
+.faqs-p p {
+    padding-left: 10px;
+}
