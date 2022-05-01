@@ -15,7 +15,7 @@ const Footer = () => {
                         <img className='w-100' src={footerimage} alt="" />
                     </div>
                     <div className="footer-menu mx-auto justify-content-center align-items-center">
-                        <div>
+                        <div className=''>
                             <Nav.Link as={Link} to="aboutus">About Us</Nav.Link>
                             <Nav.Link as={Link} to="privacy">Privacy</Nav.Link>
                             <Nav.Link as={Link} to="contact">Contact Us</Nav.Link>

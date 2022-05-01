@@ -1,40 +1,46 @@
 import React from 'react';
-import { Form, FormControl, InputGroup } from 'react-bootstrap';
+import { Button, Form, FormControl, InputGroup } from 'react-bootstrap';
 
 const AboutUs = () => {
     return (
-        <div className='container'>
-            <div className="about">
-                <h3> About</h3>
-                <p> nsfarmhouse is using scientific and modern methods in farming and agriculture worldwide. We started this website with experienced team members. We accept members throughout the world who want to contribute and share their farming experience. We started this website by keeping in mind one thing that is technology development in the farming system and increase production for increased population in the world. Most of our team members are well educated and technically sound. Modern farming systems also help to continue the farming business profit than traditional farming methods for poor farmers. We strongly believe that sufficient information is a must for agricultural or farming revolution and make a green world.</p>
+        <div className='d-flex'>
+            <div className=' container'>
+                <div className="about container ">
+                    <h3> About</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro deserunt laborum sequi vitae rem nemo maiores doloribus incidunt atque odio at magnam mollitia, perferendis optio nisi quas vel accusantium!</p>
+                </div>
+                <div className="mission container ">
+                    <h3> Mission</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam ab saepe facere voluptates sequi. Aut at eligendi impedit, cumque corrupti, molestias deserunt, sit error esse recusandae adipisci totam voluptas.</p>
+                </div>
+                <div className="vission container ">
+                    <h3> Vision</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dicta, laudantium ut cupiditate, veniam repudiandae ipsam quis omnis esse quasi labore accusantium quos, minus nisi corporis impedit! Praesentium, non ducimus?</p>
+                </div>
+                <div className="values container ">
+                    <h3> Values</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error fuga neque voluptates ea expedita odit saepe fugit? Iste quasi error repellendus sed odio ipsum non velit ea neque? Repudiandae!</p>
+                </div>
             </div>
-            <div className="mission">
-                <h3> Mission</h3>
-                <p> Our main mission is to capable the people to produce what they need, what they want in the agriculture sector. Making ensure the people that farming is better for our world.</p>
-            </div>
-            <div className="vission">
-                <h3> Vision</h3>
-                <p> Like everything, we have a vision, which is removing hunger and make a green revolution in the world. People who are not aware of modern farm train them on it.</p>
-            </div>
-            <div className="values">
-                <h3> Values</h3>
-                <p> I and my team are always ready to keep our words in developing farming systems and providing information for the improvement of agricultural activities.</p>
-            </div>
-            <div className="comment">
+            <div className="comment bg-primary">
                 <h4>Please Comment Here</h4>
-                <Form>
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <InputGroup className="mb-3">
-                            <FormControl aria-label="First name" />
-                            <FormControl aria-label="Last name" />
+                <Form className='px-3 py-2'>
+                    <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
+                        <InputGroup className="mb-3 ">
+                            <FormControl aria-label="First name
+                            " placeholder="First name" />
+                            <FormControl aria-label="Last name" placeholder="Last name" />
                         </InputGroup>
-                        <Form.Label>Email address</Form.Label>
+                        <Form.Label></Form.Label>
                         <Form.Control type="email" placeholder="name@example.com" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Example textarea</Form.Label>
-                        <Form.Control as="textarea" rows={3} />
+                        <Form.Label>
+
+                        </Form.Label>
+                        <Form.Control placeholder="Write your comment here ..." as="textarea" rows={3} />
                     </Form.Group>
+                    <Button variant="success">Primary</Button>{' '}
                 </Form>
             </div>
         </div>

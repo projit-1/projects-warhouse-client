@@ -8,7 +8,7 @@ const SocialContact = () => {
             <a className='mx-3' href="https://">
                 <FaFacebookSquare />
             </a>
-            <a className='mx-3' href="http://">
+            <a className='' href="http://">
                 <FaTwitter />
             </a>
             <a className='mx-3' href="http://">
