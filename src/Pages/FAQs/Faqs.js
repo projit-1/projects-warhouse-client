@@ -9,7 +9,7 @@ const Faqs = () => {
     return (
         <div className='container'>
             <h3>People Always Ask </h3>
-            <Accordion defaultActiveKey={['0']} alwaysOpen>
+            <Accordion >
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>How can I create a storage location?</Accordion.Header>
                     <Accordion.Body className='faqs-p d-flex'>
