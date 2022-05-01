@@ -4,7 +4,9 @@ import useInventories from '../../Hooks/useInventories';
 import slide01 from "../../images/slide-image01.jpg"
 import slide02 from "../../images/slide-image02.jpg"
 import slide03 from "../../images/slide-image03.jpg"
+import Faqs from '../FAQs/Faqs';
 import Inventory from '../Inventory/Inventory';
+import Management from '../Management/Management';
 import SubBanner from '../SubBanner/SubBanner';
 import './Home.css'
 
@@ -61,8 +63,9 @@ const Home = () => {
                         ></Inventory>)
                     }
                 </div>
-
             </inventories-section>
+            <Faqs></Faqs>
+            <Management></Management>
 
         </div>
     );
