@@ -1,13 +1,16 @@
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SocialSignIn from '../SignIn/SocialSignIn/SocialSignIn';
+import auth from '../../firebase.init';
 
 const SignUp = () => {
     const [email, setEmail] = useState(' ');
     const [password, setPassword] = useState(' ');
     const [confarmPassword, setConfarmPassword] = useState(' ');
     const [error, setError] = useState(' ');
+    const navigate = useNavigate();
 
 
     const handleEmailBlur = (event) => {
@@ -20,14 +23,29 @@ const SignUp = () => {
         setConfarmPassword(event.target.value);
     }
 
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
+
+
+    if (user) {
+        navigate('/home');
+    }
 
     const handleCreateUser = event => {
         event.preventDefault();
+
         if (password !== confarmPassword) {
             setError("Your password didn't match");
             return;
         }
+        if (password.length < 6) {
+            setError("password must be 6 character or longer")
+            return;
+        }
+
+        createUserWithEmailAndPassword(email, password);
     }
+
+
     return (
         <div>
             <h3 className='w-50 mx-auto bg-dark mt-2 text-light py-2 px-5 text-center'>Register Here</h3>
