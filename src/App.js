@@ -10,6 +10,7 @@ import Home from './Pages/Home/Home';
 import Inventories from './Pages/Inventories/Inventories';
 import NotFound from './Pages/NotFound/NotFound';
 import Privacy from './Pages/Privacy/Privacy';
+import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import SignIn from './Pages/SignIn/EmailPasswordSignIn/Signin';
 import SignUp from './Pages/SignUp/SignUp';
 
@@ -20,8 +21,16 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
-        <Route path='/inventories' element={<Inventories></Inventories>}></Route>
+        <Route path='/blogs' element={
+          <RequireAuth>
+            <Blogs></Blogs>
+          </RequireAuth>
+        }></Route>
+        <Route path='/inventories' element={
+          <RequireAuth>
+            <Inventories></Inventories>
+          </RequireAuth>
+        }></Route>
         <Route path='/signin' element={<SignIn></SignIn>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/aboutus' element={<AboutUs></AboutUs>}></Route>
