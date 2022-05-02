@@ -2,3 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
+.text p {
+    text-align: justify;
+}
