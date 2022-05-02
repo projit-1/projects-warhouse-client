@@ -4,7 +4,7 @@ NS Electronics Khulna
 ##  https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-projit-1.git
 
 <!-- Server-side Git Link -->
-##
+## https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-projit-1.git 
 
  <!-- Live Website Link -->
  ## https://ns-electronics-khulna.web.app/
