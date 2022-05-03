@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 const Privacy = () => {
     return (
-        <div className='container'>
+        <div className='container privacy'>
             <h2>Privacy Policy for NS Electronics, Khulna</h2>
             <p>At nselectronics, accessible from http://localhost:3000/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by nselectronics and how we use it.
 

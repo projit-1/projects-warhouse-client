@@ -1,0 +1,13 @@
+.tearms-condition {
+    padding: 20px;
+}
+
+.tearms-condition h3,
+h5 {
+    text-align: left;
+}
+
+.tearms-condition p {
+
+    text-align: justify;
+}

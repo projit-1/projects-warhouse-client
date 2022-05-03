@@ -3,7 +3,7 @@ import { Button, Form, FormControl, InputGroup } from 'react-bootstrap';
 
 const Contact = () => {
     return (
-        <div className='d-flex'>
+        <div className='d-flex contact'>
             <div className='container'>
                 <p className='mx-3 my-5'>Email addresses mentioned in the comment form will always be used for privacy and never be used for spamming or sold to anyone. 100 percent safe guaranteed!
 
@@ -11,7 +11,7 @@ const Contact = () => {
             </div>
             <div>
                 <div className="comment bg-primary">
-                    <h4>Please Comment Here</h4>
+                    <h4>Contact Us</h4>
                     <Form className='px-3 py-2'>
                         <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
                             <InputGroup className="mb-3 ">

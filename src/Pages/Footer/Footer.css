@@ -1,0 +1,36 @@
+.privacy {
+    padding: 20px;
+}
+
+.privacy h2 {
+    text-align: center;
+}
+
+.privacy h5 {
+    text-align: left;
+}
+
+.privacy p {
+    text-align: justify;
+}
+
+.about {
+    padding: 20px;
+}
+
+.about h3 {
+    text-align: center;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.contact {
+    padding: 20px;
+}
+
+.contact p {
+    padding: 20px;
+    text-align: justify;
+}

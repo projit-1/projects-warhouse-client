@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import footerimage from '../../images/footerimg.png'
 import SocialContact from '../Contact/SocialContact/SocialContact';
 import SubBanner from '../SubBanner/SubBanner';
+import './Footer.css'
 
 
 

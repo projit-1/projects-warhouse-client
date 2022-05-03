@@ -3,7 +3,7 @@ import { Button, Form, FormControl, InputGroup } from 'react-bootstrap';
 
 const AboutUs = () => {
     return (
-        <div className='d-flex'>
+        <div className='d-flex about'>
             <div className=' container'>
                 <div className="about container ">
                     <h3> About</h3>

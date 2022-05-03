@@ -13,6 +13,7 @@ import Privacy from './Pages/Privacy/Privacy';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import SignIn from './Pages/SignIn/EmailPasswordSignIn/Signin';
 import SignUp from './Pages/SignUp/SignUp';
+import TearmsAndCondation from './Pages/TearmsAndCondation/TearmsAndCondation';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path='/aboutus' element={<AboutUs></AboutUs>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/privacy' element={<Privacy></Privacy>}></Route>
+        <Route path='/termsandcondation' element={<TearmsAndCondation></TearmsAndCondation>}></Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>

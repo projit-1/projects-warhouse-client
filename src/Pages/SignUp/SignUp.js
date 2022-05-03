@@ -98,7 +98,7 @@ const SignUp = () => {
                     </div>
                 </Form.Group>
                 <input onClick={() => setAgree(!agree)} type="checkbox" class="form-check-input" id="terms"></input>
-                <Form.Label className='mx-2 text-primary'> <Link to='privacy' className={agree ? 'text-primary' : 'text-danger'} > Terms and Condirions     </Link>
+                <Form.Label className='mx-2 text-primary'> <Link to='/termsandcondation' className={agree ? 'text-primary' : 'text-danger'} > Terms and Condirions (read it)    </Link>
                 </Form.Label>
                 <p className='text-danger'>{error}</p>
                 <Button disabled={!agree}
