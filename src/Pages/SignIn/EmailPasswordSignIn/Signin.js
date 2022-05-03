@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialSignIn from '../SocialSignIn/SocialSignIn';
+import '../SignIn.css'
 
 const EmailPasswordSignIn = () => {
     const [email, setEmail] = useState(' ');
@@ -58,8 +59,8 @@ const EmailPasswordSignIn = () => {
                 }
                 <Button variant="primary" type="submit"> Submit </Button>
             </Form>
-            <p>
-                New to NS Electronics? <Link to='/SignUp'>Create an account</Link>
+            <p className='link '>
+                New to NS Electronics? <Link to='/SignUp' className='link  fs-4'>Create an account</Link>
             </p>
             <div>
                 <SocialSignIn></SocialSignIn>

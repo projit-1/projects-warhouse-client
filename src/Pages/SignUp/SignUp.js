@@ -81,14 +81,14 @@ const SignUp = () => {
                 <Button className='w-50 mx-auto d-block my-3' variant="primary" type="submit">
                     Sign Up
                 </Button>
-                <p>
-                    Already have an account? <Link to='/signin'>Sign In</Link>
+                <p className='link '>
+                    Already have an account? <Link to='/signin' className='link  fs-4'>Sign In</Link>
                 </p>
             </Form>
             <div className='d-flex w-50 mx-auto'>
-                <div className=' sign w-100 '></div>
+                <div className=' sign w-50'></div>
                 <div> <h5>or</h5></div>
-                <div className=' sign w-100'></div>
+                <div className=' sign w-50'></div>
             </div>
             <div>
                 <SocialSignIn></SocialSignIn>

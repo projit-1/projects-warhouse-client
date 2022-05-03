@@ -1,0 +1,11 @@
+.link {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+
+.sign {
+    height: 3px;
+    background-color: rgb(197, 180, 161);
+    margin: 12px;
+}
