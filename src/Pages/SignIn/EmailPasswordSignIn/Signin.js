@@ -5,6 +5,12 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialSignIn from '../SocialSignIn/SocialSignIn';
 import '../SignIn.css'
+import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
+import Loading from '../../Loading/Loading';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const EmailPasswordSignIn = () => {
     const [email, setEmail] = useState(' ');
@@ -27,15 +33,25 @@ const EmailPasswordSignIn = () => {
     const handlePasswordBlur = (event) => {
         setPassword(event.target.value);
     }
-
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(
+        auth
+    );
     if (user) {
         navigate(from, { replace: true });
     }
 
     const handleUserSignIn = event => {
         event.preventDefault();
-
         signInWithEmailAndPassword(email, password);
+    }
+
+    const resetPassword = async () => {
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        } else {
+            toast('please enter your email address')
+        }
     }
 
     return (
@@ -50,20 +66,24 @@ const EmailPasswordSignIn = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
+                <input type="checkbox" class="form-check-input" id="terms"></input>
+                <Form.Label className='mx-2 text-primary'>  Check me out
+                </Form.Label>
                 <p>{error?.message}</p>
                 {
-                    loading && <p>page is loading ... </p>
+                    loading && <Loading></Loading>
                 }
-                <Button variant="primary" type="submit"> Submit </Button>
+                <Button className='w-50 px-3' variant="primary" type="submit">Log In </Button>
             </Form>
             <p className='link '>
                 New to NS Electronics? <Link to='/SignUp' className='link  fs-4'>Create an account</Link>
             </p>
+            <p className='link '>
+                Forgate password? <Link to='' className='link  fs-4' onClick={resetPassword}>Reset password</Link>
+            </p>
             <div>
                 <SocialSignIn></SocialSignIn>
+                <ToastContainer />
             </div>
         </div>
     );

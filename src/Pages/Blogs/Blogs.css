@@ -1,8 +1,25 @@
+.question {
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
 .blogs {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .text p {
     text-align: justify;
+    padding: 20px;
+}
+
+.image {
+    border-radius: 10px
+}
+
+.title {
+    font-family: sans-serif;
+    font-weight: 700;
+    background-color: aquamarine;
+    padding: 10px;
 }

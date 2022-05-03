@@ -1,18 +1,25 @@
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import SocialSignIn from '../SignIn/SocialSignIn/SocialSignIn';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
+
 
 const SignUp = () => {
     const [email, setEmail] = useState(' ');
+    const [name, setName] = useState(' ');
     const [password, setPassword] = useState(' ');
     const [confarmPassword, setConfarmPassword] = useState(' ');
     const [error, setError] = useState(' ');
     const navigate = useNavigate();
+    const [agree, setAgree] = useState(false);
 
 
+    const handleNameBlur = (event) => {
+        setName(event.target.value);
+    }
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
     }
@@ -23,15 +30,23 @@ const SignUp = () => {
         setConfarmPassword(event.target.value);
     }
 
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+    const [updateProfile, updating, error1] = useUpdateProfile(auth);
 
 
     if (user) {
         navigate('/home');
     }
 
-    const handleCreateUser = event => {
+    const handleCreateUser = async (event) => {
         event.preventDefault();
+
+
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName: name });
+
+        navigate('/home');
 
         if (password !== confarmPassword) {
             setError("Your password didn't match");
@@ -41,15 +56,23 @@ const SignUp = () => {
             setError("password must be 6 character or longer")
             return;
         }
-
-        createUserWithEmailAndPassword(email, password);
     }
-
+    if (loading) {
+        return <Loading></Loading>
+    }
 
     return (
         <div>
             <h3 className='w-50 mx-auto bg-dark mt-2 text-light py-2 px-5 text-center'>Register Here</h3>
             <Form onSubmit={handleCreateUser} className='w-50 mx-auto'>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <div className='d-flex'>
+                        <div className='w-100'>
+                            <Form.Control onBlur={handleNameBlur} type="email" placeholder="Name" required />
+                        </div>
+                        <div className='text-danger'> *</div>
+                    </div>
+                </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <div className='d-flex'>
                         <div className='w-100'>
@@ -74,12 +97,13 @@ const SignUp = () => {
                         <div className='text-danger'>*</div>
                     </div>
                 </Form.Group>
-
-                <Form.Label className='mx-2'>Terms and Condirions </Form.Label>
-                <input type="checkbox" class="form-check-input" id="terms"></input>
+                <input onClick={() => setAgree(!agree)} type="checkbox" class="form-check-input" id="terms"></input>
+                <Form.Label className='mx-2 text-primary'> <Link to='privacy' className={agree ? 'text-primary' : 'text-danger'} > Terms and Condirions     </Link>
+                </Form.Label>
                 <p className='text-danger'>{error}</p>
-                <Button className='w-50 mx-auto d-block my-3' variant="primary" type="submit">
-                    Sign Up
+                <Button disabled={!agree}
+                    className='w-50 mx-auto d-block my-3' variant="primary" type="submit">
+                    Register
                 </Button>
                 <p className='link '>
                     Already have an account? <Link to='/signin' className='link  fs-4'>Sign In</Link>
@@ -93,7 +117,7 @@ const SignUp = () => {
             <div>
                 <SocialSignIn></SocialSignIn>
             </div>
-        </div>
+        </div >
     );
 };
 

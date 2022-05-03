@@ -22,12 +22,13 @@ function ReadMore({ children = 300 }) {
 const Question = (props) => {
     const { title, img, answer } = props.question
     return (
-        <div className='container text my-3'>
-            <h6>{title}</h6>
-            <img className='w-50' src={img} alt="" />
-            <p> <ReadMore>{answer}</ReadMore>
-            </p>
-
+        <div className='text my-3'>
+            <div className='question'>
+                <h6 className='title'>{title}</h6>
+                <img className=' image w-50' src={img} alt="" />
+                <p> <ReadMore>{answer}</ReadMore>
+                </p>
+            </div>
         </div>
     );
 };
