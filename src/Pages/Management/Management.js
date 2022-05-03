@@ -12,7 +12,7 @@ const Management = () => {
     return (
         <div>
             <h2>Our Management System</h2>
-            <div className="management container">
+            <div className="management container" >
                 <div className=' management-text d-flex py-2'>
                     <img src={automation} alt="" />
                     <p> <h4>Automation</h4>
