@@ -8,7 +8,7 @@ import multiple from '../../images/multiple.jpg'
 const Faqs = () => {
     return (
         <div className='container'>
-            <h3>People Always Ask </h3>
+            <h3>Frequently Asked Questions</h3>
             <Accordion >
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>How can I create a storage location?</Accordion.Header>

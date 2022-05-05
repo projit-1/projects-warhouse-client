@@ -4,7 +4,6 @@ import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
-import logo from '../../images/logo.png'
 import LogoAnimation from '../LogoAnimation/LogoAnimation';
 
 
@@ -15,7 +14,7 @@ const Header = () => {
         signOut(auth);
     }
     return (
-        <div>
+        <div className='header sticky-top '>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand>

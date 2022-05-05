@@ -19,7 +19,7 @@ const Inventory = (props) => {
                 </div>
                 <div className=' updatebutton bg-primary'>
                     <div><Link to='/inventoryId'  >  <Button className='' variant="primary">Update</Button></Link></div>
-                    <div>  <Link to=''  >  <Button className='' variant="primary">Delet</Button></Link></div>
+                    <div>  <Link to='inventories'  >  <Button className='' variant="primary">Delet</Button></Link></div>
                 </div>
             </div>
         </div>

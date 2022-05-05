@@ -17,7 +17,7 @@ const Inventories = () => {
                         ></Inventory>)
                     }
                 </div>
-                <div className="manageinventories mx-auto">
+                <div className="manageinventories mx-auto ">
                     <h2>Manage Inventories</h2>
                     <div className='inputinventories my-2 mx-auto'>
                         <input className=' inputinventories my-2' type="text" placeholder='name' />
