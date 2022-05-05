@@ -6,19 +6,22 @@ const Inventory = (props) => {
     const { name, img, comment, price, supplier, stock } = props.inventory;
     return (
         <div>
-            <Card className='inventory-contaoner  mx-auto' >
-                <Card.Img className='w-50 mx-auto' variant="top" src={img} alt="" />
-                <Card.Body className='container'>
-                    <Card.Title><h3>{name}</h3></Card.Title>
-                    <Card.Text> <p>{comment}</p>  </Card.Text>
-                    <Card.Text> <h4> Price : ${price}</h4></Card.Text>
-                    <Card.Text> <h5>Seller: {supplier}</h5> </Card.Text>
-                    <Card.Text> <h5>Stock Items:{stock}</h5> </Card.Text>
-                </Card.Body>
-                <Card.Footer className='bg-primary'>
-                    <Link to='/inventories'  >  <Button variant="primary">Stock Update</Button></Link>
-                </Card.Footer>
-            </Card>
+            <div className='inventory-contaoner w-100   mx-auto shadow-lg p-2 mb-2 bg-body rounded-3' >
+                <div>
+                    <img className=' inventoryimg mx-auto' src={img} alt="" />
+                </div>
+                <div className='container w-100 mx-auto'>
+                    <h6 >{name}</h6>
+                    <p > <small>{comment}</small></p>
+                    <p> Price : ${price}</p>
+                    <p>Seller:  {supplier}</p>
+                    <h6>Stock Items: {stock}</h6>
+                </div>
+                <div className=' updatebutton bg-primary'>
+                    <div><Link to='/inventoryId'  >  <Button className='' variant="primary">Update</Button></Link></div>
+                    <div>  <Link to=''  >  <Button className='' variant="primary">Delet</Button></Link></div>
+                </div>
+            </div>
         </div>
     );
 };

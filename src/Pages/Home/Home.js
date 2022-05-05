@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import useInventories from '../../Hooks/useInventories';
@@ -7,14 +8,12 @@ import slide03 from "../../images/slide-image03.jpg"
 import Faqs from '../FAQs/Faqs';
 import Inventory from '../Inventory/Inventory';
 import Management from '../Management/Management';
-import SubBanner from '../SubBanner/SubBanner';
 import './Home.css'
 
 const Home = () => {
     const [inventories, setInventories] = useInventories();
     return (
         <div>
-            {/* <SubBanner></SubBanner> */}
             <banner-section>
                 <Carousel fade>
                     <Carousel.Item>
@@ -53,7 +52,7 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </banner-section>
-            <inventories-section>
+            <div>
                 <h2> Our Items</h2>
                 <div className='inventory'>
                     {
@@ -63,11 +62,11 @@ const Home = () => {
                         ></Inventory>)
                     }
                 </div>
-            </inventories-section>
-            <Faqs></Faqs>
-            <Management></Management>
-
-        </div>
+                <div />
+                <Faqs></Faqs>
+                <Management></Management>
+            </div >
+        </div >
     );
 };
 
