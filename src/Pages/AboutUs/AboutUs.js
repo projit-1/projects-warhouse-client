@@ -7,7 +7,20 @@ const AboutUs = () => {
             <div className=' container'>
                 <div className="about container ">
                     <h3> About</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro deserunt laborum sequi vitae rem nemo maiores doloribus incidunt atque odio at magnam mollitia, perferendis optio nisi quas vel accusantium!</p>
+                    <p> Welcome to NS Electronics, your number one source for all things [product]. We're dedicated to providing you the very best of [product], with an emphasis on [store characteristic 1], [store characteristic 2], [store characteristic 3].
+
+
+                        Founded in [year] by [founder name], NS Electronics has come a long way from its beginnings in [starting location]. When [founder name] first started out, [his/her/their] passion for [brand message - e.g. "eco-friendly cleaning products"] drove them to start their own business.
+
+
+                        We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+
+                        <br />
+                        <br />
+                        Sincerely,
+                        <br />
+                        [founder name]
+                    </p>
                 </div>
                 <div className="mission container ">
                     <h3> Mission</h3>

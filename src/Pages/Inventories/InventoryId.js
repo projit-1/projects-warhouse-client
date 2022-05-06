@@ -1,11 +1,14 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const InventoryId = () => {
+    const { inventoryId } = useParams();
+
     return (
         <div>
-            <h3>id</h3>
+            <h3>id :{inventoryId}</h3>
+
             <div className='shippingButton my-2'>
                 <div className='my-2'>  <Button className=''>Shipping</Button></div>
                 <div> <Link to='/inventories'  > <Button className='' variant="primary">Manage Inventory</Button></Link></div>
