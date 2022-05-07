@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Pagination } from 'react-bootstrap';
 import useInventories from '../../Hooks/useInventories';
+import Addinventories from '../AddInventories/Addinventories';
 import Inventory from '../Inventory/Inventory';
 import './Inventories.css'
 
@@ -19,12 +20,7 @@ const Inventories = () => {
                 </div>
                 <div className="manageinventories mx-auto ">
                     <h2>Manage Inventories</h2>
-                    <div className='inputinventories my-2 mx-auto'>
-                        <input className=' inputinventories my-2' type="text" placeholder='name' />
-                        <input className=' inputinventories my-2' type="text" placeholder='comment' />
-                        <input className=' inputinventories  my-2' type="text" placeholder='name' />
-                        <Button className='w-50 mx-auto'>Submit</Button>
-                    </div>
+                    <Addinventories></Addinventories>
                 </div>
             </div>
             <div className="pagination w-50 mx-auto my-5">
