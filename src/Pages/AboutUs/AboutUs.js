@@ -24,15 +24,15 @@ const AboutUs = () => {
                 </div>
                 <div className="mission container ">
                     <h3> Mission</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam ab saepe facere voluptates sequi. Aut at eligendi impedit, cumque corrupti, molestias deserunt, sit error esse recusandae adipisci totam voluptas.</p>
+                    <p> Our main mission is to capable the people to produce what they need, what they want in the marketing sector. Making ensure the people that is ecommerc better for our world.</p>
                 </div>
                 <div className="vission container ">
                     <h3> Vision</h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dicta, laudantium ut cupiditate, veniam repudiandae ipsam quis omnis esse quasi labore accusantium quos, minus nisi corporis impedit! Praesentium, non ducimus?</p>
+                    <p> Like everything, we have a vision, which is removing hunger and make a green revolution in the world. People who are not aware of modern farm train them on it.</p>
                 </div>
                 <div className="values container ">
                     <h3> Values</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error fuga neque voluptates ea expedita odit saepe fugit? Iste quasi error repellendus sed odio ipsum non velit ea neque? Repudiandae!</p>
+                    <p> We and our team are always ready to keep our words in developing farming systems and providing information for the improvement of commercial activities.</p>
                 </div>
             </div>
             <div className="comment bg-primary">
