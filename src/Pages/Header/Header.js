@@ -27,10 +27,15 @@ const Header = () => {
                         <Nav className="me-auto">
                             <Nav.Link className='fs-4' as={Link} to="home">Home</Nav.Link>
                             <Nav.Link className='fs-4' as={Link} to="blogs">Blogs</Nav.Link>
-                            <Nav.Link className='fs-4' as={Link} to="inventories">Inventories</Nav.Link>
                         </Nav>
 
                         <Nav className='mx-2'>
+                            {
+                                user && <>
+                                    <Nav.Link className='fs-4' as={Link} to="inventories">Inventories</Nav.Link>
+                                    <Nav.Link className='fs-4' as={Link} to="orders">Orders</Nav.Link>
+                                </>
+                            }
                             {
                                 user ?
                                     <Button onClick={handleSignOut} variant="outline-success" className='bg-dark'>Sign Out</Button>

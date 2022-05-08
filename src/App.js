@@ -10,6 +10,7 @@ import Home from './Pages/Home/Home';
 import Inventories from './Pages/Inventories/Inventories';
 import InventoryId from './Pages/Inventories/InventoryId';
 import NotFound from './Pages/NotFound/NotFound';
+import Orders from './Pages/Orders/Orders';
 import Privacy from './Pages/Privacy/Privacy';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import SignIn from './Pages/SignIn/EmailPasswordSignIn/Signin';
@@ -32,6 +33,11 @@ function App() {
         <Route path='/inventory/:inventoryId' element={
           <RequireAuth>
             <InventoryId></InventoryId>
+          </RequireAuth>
+        }></Route>
+        <Route path="/orders" element={
+          <RequireAuth>
+            <Orders></Orders>
           </RequireAuth>
         }></Route>
         <Route path='/signin' element={<SignIn></SignIn>}></Route>

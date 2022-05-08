@@ -14,7 +14,7 @@ const InventoryId = () => {
             .then(res => res.json())
             .then(data => setInventory(data))
 
-    }, [])
+    }, [inventoryId])
 
     return (
         <div>
